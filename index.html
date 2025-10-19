@@ -1,64 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mariam Abidi</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mariam Abidi | Academic Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Mariam</h1>
-        <h2 style="font-weight: normal;">An IT Student</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img class="mountain" src="images/mountain.png" alt="mountain-img">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Mariam Abidi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="vh-100 d-flex align-items-center bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side: Photo + Buttons -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="images/avatar.png" alt="Mariam Abidi" class="rounded-circle mb-3" width="350">
+        <h1 class="fw-bold mt-2">Mariam Abidi</h1>
+        <p class="lead mb-3">Aspiring Software Engineer - ML</p>
+      </div>
+
+      <!-- Right Side: Name + About -->
+      <div class="col-md-7 text-center text-md-start">
+        <h2 class="fw-bold">Summary</h2>
+        <p>
+          I’m a Computer Science graduate student at Rochester Institute of Technology and an aspiring software engineer specializing in machine learning.
+          I enjoy developing intelligent and scalable systems that blend strong engineering principles with data-driven problem-solving, from ML-based solutions to interactive computer vision applications.
+          I’m particularly passionate about applying AI and ML in the healthcare sector to enhance diagnostics and patient outcomes.
+          Outside of technology, I love running and reading mystery and fantasy books, which fuel my curiosity and creativity.
+        </p>
+        <a href="docs/resume.pdf" class="btn btn-outline-dark mt-2" download>Download Resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-5 ">
+  <div class="container">
+    <h2 class="text-center mb-5">Education</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="timeline position-relative ps-4">
+
+          <!-- RIT -->
+          <div class="timeline-item mb-5 d-flex align-items-start">
+            <div class="icon-container me-3">
+              <i class="fas fa-university text-primary fs-4"></i>
+            </div>
+            <div class="content">
+              <h5 class="fw-bold mb-1">Rochester Institute of Technology</h5>
+              <div class="d-flex justify-content-between flex-wrap">
+                <p class="mb-1 text-muted">Master of Science in Computer Science</p>
+                <p class="mb-1 text-muted fw-semibold">Expected December 2025</p>
+              </div>
+              <p class="mb-1 text-muted">
+                <i class="fas fa-map-marker-alt me-2"></i>Rochester, New York, USA
+              </p>
+              <p class="small mb-0">
+                Relevant Coursework: Computational Problem Solving (Python), Big Data (MySQL, MongoDB),
+                Foundations of Artificial Intelligence, Foundations of Algorithms, Introduction to Machine Learning,
+                Foundations of Computer Vision, Neural Networks and Machine Learning.
+              </p>
+            </div>
+          </div>
+
+          <!-- SFIT -->
+          <div class="timeline-item mb-5 d-flex align-items-start">
+            <div class="icon-container me-3">
+              <i class="fas fa-university text-primary fs-4"></i>
+            </div>
+            <div class="content">
+              <h5 class="fw-bold mb-1">St. Francis Institute of Technology, University of Mumbai </h5>
+              <div class="d-flex justify-content-between flex-wrap">
+                <p class="mb-1 text-muted">Bachelor of Science in Information Technology</p>
+                <p class="mb-1 text-muted fw-semibold">May 2023</p>
+              </div>
+              <p class="mb-1 text-muted">
+                <i class="fas fa-map-marker-alt me-2"></i>Mumbai, Maharashtra, India
+              </p>
+              <p class="small mb-0">
+                Relevant Coursework: Computational Problem Solving (Python), Big Data (MySQL, MongoDB),
+                Foundations of Artificial Intelligence, Foundations of Algorithms, Introduction to Machine Learning,
+                Foundations of Computer Vision, Neural Networks and Machine Learning.
+              </p>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Experience Section -->
+<section id="experience" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #121212;">Experience</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="timeline position-relative ps-4">
+
+          <!-- Graduate Teaching Assistant -->
+          <div class="timeline-item mb-5 d-flex align-items-start">
+            <div class="icon-container me-3">
+              <i class="fas fa-briefcase text-primary fs-4"></i>
+            </div>
+            <div class="content">
+              <h5 class="fw-bold mb-1">Graduate Teaching Assistant</h5>
+              <p class="mb-1 text-muted">Rochester Institute of Technology</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <p class="mb-1 text-muted">August 2025 – Present</p>
+              </div>
+              <p class="small mb-0">
+                Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
+                50+ citations in 3 years.
+              </p>
+            </div>
+          </div>
+
+          <!-- Marketing Data Analyst -->
+          <div class="timeline-item mb-4 d-flex align-items-start">
+            <div class="icon-container me-3">
+              <i class="fas fa-briefcase text-primary fs-4"></i>
+            </div>
+            <div class="content">
+              <h5 class="fw-bold mb-1">Marketing Data Analyst</h5>
+              <p class="mb-1 text-muted">Homeflic Wegrow</p>
+              <div class="d-flex justify-content-between flex-wrap">
+                <p class="mb-1 text-muted">May 2021 – July 2021</p>
+              </div>
+              <p class="small mb-0">
+                Built predictive models (logistic regression & decision trees) on user engagement data.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">PINN-Based Aerodynamic Flow Prediction and Clustering</h5>
+            <p><a href="https://github.com/mariamabidi/PINN-Based-Flow-Prediction" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Github</a></p>
+            <p class="card-text" style="text-align: justify;">Developed Physics-Informed Neural Networks (PINNs) in PyTorch to
+              model 3D aerodynamic velocity fields around automotive geometries, incorporating Navier–Stokes equations for
+              physically consistent predictions. Applied autoencoder-based feature extraction and KMeans clustering
+              to uncover aerodynamic flow regions from high-dimensional CFD data. Automated 3D visualization and analysis
+              pipelines using PyVista for streamlined aerodynamic evaluation and model validation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">ML-based Distributed DDoS Detection and Mitigation System</h5>
+            <p><a href="https://github.com/mariamabidi/DDoS-Mitigation" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Github</a></p>
+            <p class="card-text" style="text-align: justify;">Built a distributed DDoS detection system using Random Forest and Python, incorporating feature engineering,
+              SMOTE balancing, and feature importance analysis to accurately detect attack traffic. Containerized ML models with Docker
+              and deployed them across multiple nodes using Docker Compose for scalable, real-time inference and automated blocklist updates.
+              Developed end-to-end data pipelines to process 30,000+ network packets for traffic simulation, feature extraction, and
+              threshold-based mitigation using Flask and Pandas..</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Scalable Microservices-Based E-Commerce System</h5>
+            <p><a href="https://github.com/mariamabidi/Spring-boot-Microservices" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Github</a></p>
+            <p class="card-text" style="text-align: justify;">Developed Spring Boot–based microservices with OpenFeign for efficient inter-service
+              communication, handling 20+ transactions per second and reducing API response time by 25%. Secured APIs
+              using JWT authentication, Spring Security, and RBAC, with thorough testing via Postman to ensure reliability.
+              Designed and optimized a PostgreSQL database for efficient data operations. Containerized all services with
+              Docker and set up a CI/CD pipeline for automated deployment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Inventory Order Management System</h5>
+            <p><a href="https://github.com/mariamabidi/Order-Management-Site" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Github</a></p>
+            <p class="card-text" style="text-align: justify;">Built a real-time order management system using Redis,
+              leveraging Redis Streams for efficient order processing and inventory tracking, reducing update latency
+              by 50%. Implemented Redis pub/sub for instant notifications and inventory updates, improving response
+              time by 35%. Integrated MongoDB for reliable order data management, achieving 99.9% retrieval accuracy
+              and maintaining consistent stock levels through automated quantity updates.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Glimpse: Virtual Exhibition Framework</h5>
+            <p><a href="https://github.com/monik6/glimpse-ve" class="link-primary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Github</a></p>
+            <p class="card-text" style="text-align: justify;">Led the development of a 2D virtual exhibition platform
+              by integrating Google Forms and Sheets APIs with AppScript, implementing OAuth for secure data collection
+              and real-time synchronization. Engineered efficient data parsing using JSON and HTML/XML, reducing
+              processing time by 40%, and deployed dynamic layout algorithms for automated slide generation.
+              Optimized workflows to cut development time by 99%, ensuring cost-effective and rapid product delivery.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #121212;">Skills</h2>
+
+    <div class="row">
+      <!-- Languages -->
+      <div class="col-md-6 mb-4">
+        <h5><i class="fas fa-language me-2 text-primary"></i>Languages</h5>
+        <p class="text-muted mb-0">
+          Python &nbsp;|&nbsp; C++ &nbsp;|&nbsp; Java &nbsp;|&nbsp; SQL (MySQL & PostgreSQL) &nbsp;|&nbsp;
+          NoSQL (MongoDB) &nbsp;|&nbsp; JavaScript &nbsp;|&nbsp; HTML/CSS
+        </p>
+      </div>
+
+      <!-- Frameworks & Platforms -->
+      <div class="col-md-6 mb-4">
+        <h5><i class="fas fa-cubes me-2 text-primary"></i>Frameworks & Platforms</h5>
+        <p class="text-muted mb-0">
+          SpringBoot &nbsp;|&nbsp; React &nbsp;|&nbsp; AWS &nbsp;|&nbsp;
+          Redis &nbsp;|&nbsp; Django &nbsp;|&nbsp; Firebase
+        </p>
+      </div>
     </div>
 
-    <div class="middle">
-        <div class="profile">
-          <img class="apple" src="images/apple.png" alt="">
-          <h2>Hello.</h2>
-          <p class="intro">Motivated individual with strong work ethic and ability to work independently. 
-            Strong organizational and team collaboration skills with experience in improving processes. The quote that inspired me the most is 
-            <i>"All we have to decide is what to do with the time that is given us."</i> from The Fellowship of the Ring by J.R.R. Tolkein</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="computer" src="images/computer.png" alt="">
-            <h3>Lorem & Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-          </div>
-          
-          <div class="skill-row">
-            <img class="skill-img" src="images/skills.png" alt="">
-            <h3>Lorem & Ipsum</h3>
-            <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-          </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-          <p class="contact-info">Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-          <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-        </div>
+    <div class="row">
+      <!-- Developer Tools -->
+      <div class="col-md-6 mb-4">
+        <h5><i class="fas fa-tools me-2 text-primary"></i>Developer Tools</h5>
+        <p class="text-muted mb-0">
+          Linux &nbsp;|&nbsp; Git &nbsp;|&nbsp; Docker &nbsp;|&nbsp;
+          Jenkins &nbsp;|&nbsp; Gradle &nbsp;|&nbsp; Postman &nbsp;|&nbsp; LaTeX
+        </p>
       </div>
-      
-      
-      <div class="bottom">
-        <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-        <p class="copyright">© 2021 Mariam Abidi.</p>
+
+      <!-- Libraries -->
+      <div class="col-md-6 mb-4">
+        <h5><i class="fas fa-layer-group me-2 text-primary"></i>Libraries</h5>
+        <p class="text-muted mb-0">
+          NumPy &nbsp;|&nbsp; TensorFlow &nbsp;|&nbsp; PyTorch &nbsp;|&nbsp; Scikit-learn &nbsp;|&nbsp;
+          MediaPipe &nbsp;|&nbsp; Pandas &nbsp;|&nbsp; OpenCV &nbsp;|&nbsp; Matplotlib
+        </p>
       </div>
-      
+    </div>
+  </div>
+</section>
+
+
+<!-- Achievements Section -->
+<section id="achievements" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Achievements</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <ul class="list-group list-group-flush">
+
+          <li class="list-group-item d-flex align-items-start">
+            <i class="fas fa-graduation-cap text-secondary me-3 mt-1"></i>
+            <span>Completed the
+              <a href="https://www.coursera.org/account/accomplishments/verify/3QMOZA1LMPTR" target="_blank" style="text-decoration: none; color: inherit;">
+            <strong>Neural Networks and Deep Learning</strong></a>  course on Coursera by Andrew Ng.</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-start">
+            <i class="fas fa-brain text-secondary me-3 mt-1"></i>
+            <span>Earned an <strong>Advanced Certificate in Artificial Intelligence</strong> from Rochester Institute of Technology.</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-start">
+            <i class="fas fa-award text-secondary me-3 mt-1"></i>
+            <span>Received a <strong>40% scholarship</strong> from RIT for academic excellence.</span>
+          </li>
+
+          <li class="list-group-item d-flex align-items-start">
+            <i class="fas fa-trophy text-secondary me-3 mt-1"></i>
+            <span>Won <strong>first place</strong> in a project competition for the <em>Glimpse</em> project.</span>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 text-center bg-light">
+  <div class="container">
+    <h2 class="mb-4" style="color: #121212">Contact</h2>
+
+    <div class="d-flex justify-content-center align-items-center gap-4">
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/mariamabidi" target="_blank" class="contact-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/mariamabidi" target="_blank" class="contact-icon">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <!-- Gmail -->
+      <a href="mailto:ma6267@rit.edu" target="_blank" class="contact-icon">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="text-center py-3 bg-dark text-light">
+  © 2025 Mariam Abidi
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
